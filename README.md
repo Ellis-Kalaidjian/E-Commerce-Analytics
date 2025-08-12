@@ -11,7 +11,7 @@ The resulting data frame contained 32,005 orders grouped over 197 variables of c
 
 The R Script used to develop the aforementioned ETL processes can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/order_data_ETL.R).
 
-The SQL queries used for the following analyese can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/e-commerce-sql-queries-github.sql).
+The SQL queries used for the following analyses can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/e-commerce-sql-queries-github.sql).
 
 ## Executive Summary
 
