@@ -9,9 +9,9 @@ The first task of this work was to connect to the client’s Shopify store to au
 
 The resulting data frame contained 32,005 orders grouped over 197 variables of categorical, numeric, and binary classes, accounting for order records spanning back to 2019. It was requested that all analyses focus on years 2023 to present, so the data was first filtered to only include transactions during the desired time frame. Additional cleaning—which included the removal of orders with sales prices equal to $0, cancelled orders, test orders, and orders with no customer ID—resulted in an 85% reduction to 3,880 transactions.
 
-The R Script used to develop the aforementioned ETL processes can be found here.
+The R Script used to develop the aforementioned ETL processes can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/order_data_ETL.R).
 
-The SQL queries used for the following analyese can be found here.
+The SQL queries used for the following analyese can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/e-commerce-sql-queries-github.sql).
 
 ## Executive Summary
 
