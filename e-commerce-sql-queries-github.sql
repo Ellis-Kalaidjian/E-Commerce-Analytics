@@ -1,4 +1,4 @@
--- Temporal sales trends
+-- Temporal Sales Trends
 WITH sales_and_orders_per_year AS (
 SELECT
 	SUBSTRING(created_at,6,2) AS order_month, 
@@ -38,17 +38,6 @@ ORDER BY 3 DESC,1 DESC;
 SELECT DISTINCT "shipping_address.country_code"
 FROM orders_23_pres ; --values are 'NA', Canada, and United States 
 
---Sales trends by country
-SELECT
-	"shipping_address.country_code" AS country,
-	COUNT(id) AS total_orders,
-	ROUND(SUM(CAST(total_price AS REAL))) AS total_sales,
-	ROUND(SUM(CAST(total_price AS REAL)) / COUNT(id),2) AS aov
-FROM orders_23_pres
-WHERE "shipping_address.country_code" IS NOT 'NA'
-GROUP BY 1
-ORDER BY 2 DESC ;
-
 --Sales trends within the US
 SELECT 
 "shipping_address.province_code" AS state,
@@ -59,7 +48,6 @@ FROM orders_23_pres
 WHERE "shipping_address.country_code" = 'US'
 GROUP BY 1
 ORDER BY 2 DESC, 3 DESC ;
-
 
 --Sales trends within the US, by year
 SELECT 
@@ -73,7 +61,7 @@ WHERE "shipping_address.country_code" = 'US'
 GROUP BY 1,5
 ORDER BY 5 DESC, 2 DESC ;
 
---Sales attribution analysis: Analyze sales by web traffic source
+--Sales Attribution Analysis: Analyze Sales by Web Traffic Source
 --First, look at unique web traffic sources via referring_site and landing_site 
 SELECT DISTINCT referring_site 
 FROM orders_23_pres ;
@@ -97,7 +85,7 @@ SELECT
       AND landing_site NOT LIKE '%utm%=%') THEN 'Search Engine Traffic'
     WHEN referring_site LIKE '%instagram%' AND landing_site LIKE '%utm%=%' THEN 'Instagram Ad'
     WHEN referring_site LIKE '%instagram%' AND landing_site NOT LIKE '%utm%=%' THEN 'Instagram Traffic'
-    WHEN referring_site LIKE 'https://brand-domain/%' THEN 'Website Navigation'
+    WHEN referring_site LIKE 'https://brand-domain/%' THEN 'Website Navigation' --Anonymized
     WHEN (landing_site LIKE '%utm_source=Klaviyo%' OR
     	landing_site LIKE '%utm_source=swym%'OR
     	landing_site LIKE '%utm_source=Notify Me_SMS%' OR
@@ -107,7 +95,7 @@ SELECT
   		AND referring_site != 'NA'
   		AND (
     	referring_site NOT LIKE '%google%' AND
-    	referring_site NOT LIKE '%badfish%' AND
+    	referring_site NOT LIKE '%brand-domain%' AND --Anonymized
     	referring_site NOT LIKE '%instagram%' AND
     	referring_site NOT LIKE '%facebook%' AND
     	referring_site NOT LIKE '%shopify%' AND
