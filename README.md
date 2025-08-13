@@ -20,25 +20,25 @@ The SQL queries used for the following analyses can be found [here](https://gith
 
 2.	Sales and order counts show steady growth, with a heightened uptick in activity as of February 2025.
 
-<img width="405" height="183" alt="image" src="https://github.com/user-attachments/assets/3dd7676c-9c46-47be-b614-c95f1bd17862" />
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/3dd7676c-9c46-47be-b614-c95f1bd17862" />
 
 **Figure 1. Monthly average order value (2023–present)**
 
-<img width="405" height="177" alt="image" src="https://github.com/user-attachments/assets/47a58404-f3e2-4df6-b7b7-65775b54115c" />
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/47a58404-f3e2-4df6-b7b7-65775b54115c" />
 
 **Figure 2. Monthly order counts (2023–present)**
 
-<img width="405" height="183" alt="image" src="https://github.com/user-attachments/assets/138a6725-e8cc-4ea1-849d-dfa1734edd41" />
+<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/138a6725-e8cc-4ea1-849d-dfa1734edd41" />
 
 **Figure 3. Monthly sales (2023–present)**
 
 ### Recommendations
 
-1.	Capitalize on the Recent Surge (Feb 2025–Present): Scale up inventory, marketing campaigns, and fulfillment capacity in anticipation of sustained or increasing order volume. The February 2025 spike in orders and sales suggests growing brand momentum—missing out on stock or shipping delays could harm customer trust.
+1.	**Capitalize on the Recent Surge (Feb 2025–Present)**: Scale up inventory, marketing campaigns, and fulfillment capacity in anticipation of sustained or increasing order volume. The February 2025 spike in orders and sales suggests growing brand momentum—missing out on stock or shipping delays could harm customer trust.
 
-2.	Optimize Product Mix to Stabilize AOV: Encourage bundling or upselling of mid-to-high price-point items through targeted promotions. AOV has recovered from its mid-2023 dip ($85 to ~$45). Enhancing perceived value without discounting can boost margin per order.
+2.	**Optimize Product Mix to Stabilize AOV**: Encourage bundling or upselling of mid-to-high price-point items through targeted promotions. AOV has recovered from its mid-2023 dip ($85 to ~$45). Enhancing perceived value without discounting can boost margin per order.
 
-3.	Monitor Price Elasticity: Run A/B pricing tests on select SKUs to understand customer sensitivity and identify high-margin opportunities. The early 2023 AOV peak suggests customers were once comfortable spending more—there may still be room to recapture this value.
+3.	**Monitor Price Elasticity**: Run A/B pricing tests on select SKUs to understand customer sensitivity and identify high-margin opportunities. The early 2023 AOV peak suggests customers were once comfortable spending more—there may still be room to recapture this value.
  
 ### Key Insights: Geographic Trends
 1.	Florida has been the highest performing state across all KPIs.
@@ -49,15 +49,15 @@ The SQL queries used for the following analyses can be found [here](https://gith
 
 4.	Most active customer locations have been responsible for ~$7,000–$10,000 in sales and 110–200 product orders since 2023 (excluding FL, CA, and TX).
 
-Table 1. Top 10 States for Sales Performance (2023–present)
+**Table 1. Top 10 States for Sales Performance (2023–present)**
 <img width="619" height="310" alt="Screen Shot 2025-08-12 at 10 55 47 AM" src="https://github.com/user-attachments/assets/8ccf6466-0305-439a-9a07-28eb079a72bc" />
 
 ### Recommendations
-1.	Double Down on Florida, California, and Texas: Launch geo-targeted ad campaigns, loyalty perks, or expedited shipping offers in these top 3 states. These states contribute a disproportionate share of sales volume and revenue, and have AOVs near or above average.
+1.	**Double Down on Florida, California, and Texas**: Launch geo-targeted ad campaigns, loyalty perks, or expedited shipping offers in these top 3 states. These states contribute a disproportionate share of sales volume and revenue, and have AOVs near or above average.
 
-2.	Expand Mid-Atlantic and Southeast Penetration: Leverage lookalike audiences in adjacent states like Maryland, Pennsylvania, and Tennessee to replicate success seen in NC, SC, GA, and VA. Regional cultural similarities may yield similar buyer behavior with lower customer acquisition costs.
+2.	**Expand Mid-Atlantic and Southeast Penetration**: Leverage lookalike audiences in adjacent states like Maryland, Pennsylvania, and Tennessee to replicate success seen in NC, SC, GA, and VA. Regional cultural similarities may yield similar buyer behavior with lower customer acquisition costs.
 
-3.	Explore Untapped Markets with Similar Demographics: Analyze states with similar angling or outdoor recreation profiles (e.g., Michigan, Minnesota, Louisiana) for expansion potential. The strong performance of coastal and southern states suggests recreational behavior is a sales driver.
+3.	**Explore Untapped Markets with Similar Demographics**: Analyze states with similar angling or outdoor recreation profiles (e.g., Michigan, Minnesota, Louisiana) for expansion potential. The strong performance of coastal and southern states suggests recreational behavior is a sales driver.
 
 ### Key Insights: E-Commerce Attribution Analysis
 
@@ -65,38 +65,28 @@ Table 1. Top 10 States for Sales Performance (2023–present)
 
 **Figure 4. Sales Volume Breakdown by Traffic Sources**
 
-1. Direct Search is the Dominant Channel
+1. **Direct Search is the Dominant Channel**: The largest sales channel comes from users who already know the brand and are typing it directly into the search bar. This suggests strong brand recognition and loyalty, but also a reliance on existing customers rather than new audience growth.
 
-The largest sales channel comes from users who already know the brand and are typing it directly into the search bar. This suggests strong brand recognition and loyalty, but also a reliance on existing customers rather than new audience growth.
+2. **Search Engine Traffic is a Key Acquisition Driver**: Organic search presence is robust, showing that SEO efforts are paying off. This also means content marketing and keyword targeting are likely performing well.
 
-2. Search Engine Traffic is a Key Acquisition Driver
+3. **Social Platforms are Secondary Drivers**: Facebook Traffic is stronger than Instagram Traffic, but both are smaller compared to direct and search sources. Paid ads (Facebook Ads, Instagram Ads, Google Ads) occupy relatively small segments, suggesting limited reach or lower spend.
 
-Organic search presence is robust, showing that SEO efforts are paying off. This also means content marketing and keyword targeting are likely performing well.
+4. **Owned Channels (Website Navigation & Email/SMS)**: Website navigation is a healthy source of internal traffic, showing users are exploring and buying after landing. Email/SMS Marketing drives some traffic, but its share is relatively small compared to potential.
 
-3. Social Platforms are Secondary Drivers
-
-Facebook Traffic is stronger than Instagram Traffic, but both are smaller compared to direct and search sources. Paid ads (Facebook Ads, Instagram Ads, Google Ads) occupy relatively small segments, suggesting limited reach or lower spend.
-
-4. Owned Channels (Website Navigation & Email/SMS)
-
-Website navigation is a healthy source of internal traffic, showing users are exploring and buying after landing. Email/SMS Marketing drives some traffic, but its share is relatively small compared to potential.
-
-5. Partnerships Have Untapped Potential
-
-Partner domains contribute modestly but represent a growth opportunity if expanded.
+5. **Partnerships Have Untapped Potential**: Partner domains contribute modestly but represent a growth opportunity if expanded.
 
 ### Recommendations
-1. Leverage Direct Search Strength for Loyalty Monetization: Create loyalty programs, VIP clubs, or exclusive drops for repeat customers. Since direct traffic shows strong brand recall, upselling and cross-selling campaigns could increase AOV.
+1. **Leverage Direct Search Strength for Loyalty Monetization**: Create loyalty programs, VIP clubs, or exclusive drops for repeat customers. Since direct traffic shows strong brand recall, upselling and cross-selling campaigns could increase AOV.
 
-2. Double Down on SEO & Content Marketing: Expand high-performing keyword content and optimize for long-tail queries to capture even more organic search traffic. Produce seasonal or product-focused blog posts to pull in search-driven customers before peak buying periods.
+2. **Double Down on SEO & Content Marketing**: Expand high-performing keyword content and optimize for long-tail queries to capture even more organic search traffic. Produce seasonal or product-focused blog posts to pull in search-driven customers before peak buying periods.
 
-3. Scale Paid Acquisition Strategically: Increase budget and targeting for Facebook and Instagram Ads to grow beyond the existing audience. Test more creative formats—video ads, reels, and carousel ads—to improve engagement. Also consider retargeting campaigns aimed at users who visited but did not convert.
+3. **Scale Paid Acquisition Strategically**: Increase budget and targeting for Facebook and Instagram Ads to grow beyond the existing audience. Test more creative formats—video ads, reels, and carousel ads—to improve engagement. Also consider retargeting campaigns aimed at users who visited but did not convert.
 
-4. Boost Email/SMS Engagement: Grow the subscriber list through incentives like discounts, early access, or content freebies. Implement segmented drip campaigns to re-engage past customers and drive repeat purchases.
+4. **Boost Email/SMS Engagement**: Grow the subscriber list through incentives like discounts, early access, or content freebies. Implement segmented drip campaigns to re-engage past customers and drive repeat purchases.
 
-5. Strengthen Partnerships: Explore collaborations with complementary brands, influencers, or niche communities in fishing/outdoor sports. Partner placements could be amplified to drive more referral traffic.
+5. **Strengthen Partnerships**: Explore collaborations with complementary brands, influencers, or niche communities in fishing/outdoor sports. Partner placements could be amplified to drive more referral traffic.
 
-6. Cross-Channel Synergy: Use social ads to push for newsletter sign-ups, which can then be nurtured via email/SMS marketing. Promote search-optimized blog posts through Facebook/Instagram to blend SEO with paid growth.
+6. **Cross-Channel Synergy**: Use social ads to push for newsletter sign-ups, which can then be nurtured via email/SMS marketing. Promote search-optimized blog posts through Facebook/Instagram to blend SEO with paid growth.
 
 
 
