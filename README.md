@@ -3,13 +3,13 @@
 This repository showcases a portion of data analytics work I completed for a small fishing tackle and apparel brand during a freelance engagement. The brand, with 112K followers across its social media platforms, has maintained average annual sales of roughly $350K since 2020, driven primarily by e-commerce and supplemented by occasional in-person “pop-up” events across the United States. The project, conducted in July 2025, encompassed three main deliverables: building an API pipeline to integrate customer and order data, performing sales trends analyses, and conducting an attribution analysis of the brand’s e-commerce channels. Note that sensitive details, including customer information and any identifiers of the company, have been removed where necessary.
 
 ## Data Compilation: Building API Pipeline, Data Cleaning, and Feature Engineering
-The first task of this work was to connect to the client’s Shopify store to automatically download and organize order data. Using R, secure access to the store’s API was set up, then customer records, their associated activity history, and all store orders were retrieved. The R script was designed to handle large datasets by pulling data in batches and continuing until all available records are collected. After gathering the data, a simplified version of the order dataset was exported as a CSV file for further analysis and reporting.
+The first task of this work was to connect to the client’s Shopify store to automatically download and organize order data. Using Python, secure access to the store’s API was set up, then customer records, their associated activity history, and all store orders were retrieved. The Python script was designed to handle large datasets by pulling data in batches and continuing until all available records are collected. After gathering the data, a simplified version of the order dataset was exported as a CSV file for further analysis and reporting.
 
 <img width="3121" height="1278" alt="Picture1" src="https://github.com/user-attachments/assets/b2284c6d-000b-44cf-8b61-2eb78228160f" />
 
 The resulting data frame contained 32,005 orders grouped over 197 variables of categorical, numeric, and binary classes, accounting for order records spanning back to 2019. It was requested that all analyses focus on years 2023 to present, so the data was first filtered to only include transactions during the desired time frame. Additional cleaning—which included the removal of orders with sales prices equal to $0, cancelled orders, test orders, and orders with no customer ID—resulted in an 85% reduction to 3,880 transactions.
 
-The R Script used to develop the aforementioned ETL processes can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/order_data_ETL.R).
+The Python Script used to build the aforementioned API pipeline can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/e-commerce-ETL.ipynb).
 
 The SQL queries used for the following analyses can be found [here](https://github.com/Ellis-Kalaidjian/E-Commerce-Analytics/blob/main/e-commerce-sql-queries-github.sql).
 
